@@ -5,9 +5,9 @@
     <x-slot name="pan">page-home</x-slot>
 
     <span>Hey, it's Yves 👋!</span>
-    <h1 class="text-6xl leading-16 md:text-6xl md:leading-tighter mt-24 mb-16 font-bold break-words md:break-normal">I’m a web and application developer, and speaker based in Vevey, Switzerland.</h1>
+    <h1 class="text-3xl md:text-6xl mt-24 mb-16 font-bold">I’m a web and application developer, and speaker based in Vevey, Switzerland.</h1>
 
-    <div class="space-y-12">
+    <div class="space-y-8 md:space-y-12">
         <section>
             <h2 class="italic font-serif">Now</h2>
 
@@ -21,7 +21,7 @@
         <section>
             <h2 class="italic font-serif">Find me on</h2>
 
-            <ul class="flex space-x-4">
+            <ul class="flex flex-wrap space-x-2 space-y-2 md:flex-nowrap md:space-y-0 md:space-x-4">
                 <li><a href="https://github.com/engetschwiler" target="_blank" class="underline underline-offset-4 hover:text-emerald-500 transition-colors"><span>Github</span></a></li>
                 <li><a href="https://www.linkedin.com/in/yves-engetschwiler/" target="_blank" class="underline underline-offset-4 hover:text-emerald-500 transition-colors"><span>LinkedIn</span></a></li>
                 <li><a href="https://pinkary.com/@interactive" target="_blank" class="underline underline-offset-4 hover:text-emerald-500 transition-colors"><span>Pinkary</span></a></li>

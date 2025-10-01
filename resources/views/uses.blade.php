@@ -9,9 +9,9 @@
 
         <span>Uses</span>
     </div>
-    <h1 class="text-6xl leading-16 md:text-6xl md:leading-tighter mt-24 mb-16 font-bold break-words md:break-normal">A part of the amount of tools in my dev stack</h1>
+    <h1 class="text-3xl md:text-6xl mt-24 mb-16 font-bold">A part of the amount of tools in my dev stack</h1>
 
-    <div class="space-y-12">
+    <div class="space-y-8 md:space-y-12">
         <section>
             <h2 class="italic font-serif">Hardware</h2>
 

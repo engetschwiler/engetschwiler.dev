@@ -11,18 +11,18 @@ engetschwiler/
     config/                 # Configuration files
     public/                 # Public entry point (index.php, assets)
     resources/              # Views, CSS and JavaScript
-       css/               # CSS files
-       js/                # JavaScript files
-       views/             # Blade templates
-routes/                 # Route definitions
-storage/                # Generated files (logs, cache, etc.)
-tests/                  # Automated tests
-vendor/                 # PHP dependencies (Composer)
-node_modules/           # JavaScript dependencies (npm/yarn)
-.env.example            # Configuration template
-composer.json           # PHP dependencies
-package.json            # JavaScript dependencies
-vite.config.js          # Vite configuration
+       css/                 # CSS files
+       js/                  # JavaScript files
+       views/               # Blade templates
+    routes/                 # Route definitions
+    storage/                # Generated files (logs, cache, etc.)
+    tests/                  # Automated tests
+    vendor/                 # PHP dependencies (Composer)
+    node_modules/           # JavaScript dependencies (npm/yarn)
+    .env.example            # Configuration template
+    composer.json           # PHP dependencies
+    package.json            # JavaScript dependencies
+    vite.config.js          # Vite configuration
 ```
 
 ## Prerequisites

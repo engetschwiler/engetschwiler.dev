@@ -1,33 +1,139 @@
-## About me
+# Project
 
-Hey, it's Yves 👋!
+My personal website built with Laravel and Tailwind CSS.
 
-I'm a web and application developer, and speaker based in Vevey, Switzerland.
+## Project Structure
 
-### Currently
+```
+engetschwiler/
+    app/                    # Application business logic
+    bootstrap/              # Laravel bootstrap files
+    config/                 # Configuration files
+    public/                 # Public entry point (index.php, assets)
+    resources/              # Views, CSS and JavaScript
+       css/               # CSS files
+       js/                # JavaScript files
+       views/             # Blade templates
+routes/                 # Route definitions
+storage/                # Generated files (logs, cache, etc.)
+tests/                  # Automated tests
+vendor/                 # PHP dependencies (Composer)
+node_modules/           # JavaScript dependencies (npm/yarn)
+.env.example            # Configuration template
+composer.json           # PHP dependencies
+package.json            # JavaScript dependencies
+vite.config.js          # Vite configuration
+```
 
-Working at [bee interactive](https://bee-interactive.ch) crafting solutions for the web using Laravel. I'm also available for consulting and speaking.
+## Prerequisites
 
-### Tech Stack
+- PHP >= 8.3
+- Composer
+- Node.js and npm (or yarn)
+- A web server (Apache, Nginx) or use Laravel's built-in server
 
-- Laravel
-- PHP
-- AlpineJS
-- Livewire
-- Tailwind CSS
+## Installation
 
-### Experience
+### 1. Clone the project
 
-Web & applications development since 2002 - Senior web developer with 20+ years of experience specializing in modern web technologies.
+```bash
+git clone <repo-url>
+cd engetschwiler
+```
 
-### Find me on
+### 2. Install PHP dependencies
 
-- [Github](https://github.com/engetschwiler)
-- [Pinkary](https://pinkary.com/@interactive)
-- [Twitter](https://x.com/yvesdesign)
-- [Instagram](https://instagram.com/derailleurch)
-- [LinkedIn](https://www.linkedin.com/in/yves-engetschwiler/)
+```bash
+composer install
+```
 
-### Interests
+### 3. Install JavaScript dependencies
 
-When I'm not wrestling with semicolons and finals, you'll find me cycling and walking around the mountains of Switzerland.
+```bash
+npm install
+# or
+yarn install
+```
+
+### 4. Environment setup
+
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+Edit the `.env` file according to your needs (database, etc.).
+
+### 5. Start the development server
+
+```bash
+composer dev
+```
+
+This command starts simultaneously:
+- Laravel server (port 8000)
+- Vite server for hot-reload assets
+
+Or run services separately:
+
+```bash
+# Laravel server only
+php artisan serve
+
+# Compile assets in development mode
+npm run dev
+```
+
+The site will be accessible at: `http://localhost:8000`
+
+## Development
+
+### Build assets for production
+
+```bash
+npm run build
+```
+
+### Run tests
+
+```bash
+composer test
+# or
+php artisan test
+```
+
+### Format PHP code
+
+```bash
+./vendor/bin/pint
+```
+
+## Technologies Used
+
+- **Backend**: Laravel 12
+- **Frontend**: Tailwind CSS 4
+- **Build tool**: Vite
+- **Package manager**: Composer (PHP), npm/yarn (JavaScript)
+
+## Modifying the Code
+
+### Add a new page
+
+1. Create a route in `routes/web.php`
+2. Create a controller in `app/Http/Controllers/` (optional)
+3. Create a view in `resources/views/`
+
+### Modify styles
+
+- CSS files are located in `resources/css/`
+- The project uses Tailwind CSS for styling
+- Changes are automatically reloaded in development mode
+
+### Modify JavaScript
+
+- JS files are located in `resources/js/`
+- Changes are automatically reloaded in development mode
+
+## License
+
+MIT

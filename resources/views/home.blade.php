@@ -23,10 +23,10 @@
 
             <ul class="flex space-x-4">
                 <li><a href="https://github.com/engetschwiler" target="_blank" class="underline underline-offset-4 hover:text-emerald-500 transition-colors"><span>Github</span></a></li>
+                <li><a href="https://www.linkedin.com/in/yves-engetschwiler/" target="_blank" class="underline underline-offset-4 hover:text-emerald-500 transition-colors"><span>LinkedIn</span></a></li>
                 <li><a href="https://pinkary.com/@interactive" target="_blank" class="underline underline-offset-4 hover:text-emerald-500 transition-colors"><span>Pinkary</span></a></li>
                 <li><a href="https://x.com/yvesdesign" target="_blank" class="underline underline-offset-4 hover:text-emerald-500 transition-colors"><span>Twitter</span></a></li>
                 <li><a href="https://instagram.com/derailleurch" target="_blank" class="underline underline-offset-4 hover:text-emerald-500 transition-colors"><span>Instagram</span></a></li>
-                <li><a href="https://www.linkedin.com/in/yves-engetschwiler/" target="_blank" class="underline underline-offset-4 hover:text-emerald-500 transition-colors"><span>LinkedIn</span></a></li>
             </ul>
         </section>
     </div>

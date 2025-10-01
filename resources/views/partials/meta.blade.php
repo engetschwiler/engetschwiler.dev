@@ -6,21 +6,24 @@
 <meta name="description" content="{{ $description ?? '' }}">
 <meta property="og:title" content="{{ $title ?? '' }}"/>
 <meta property="og:description" content="{{ $description ?? '' }}"/>
-<meta property="og:image" content="{{ $card ?? url('/images/og-image.jpg') }}"/>
+<meta property="og:image" content="{{ $card ?? url('/images/og-image.png') }}"/>
 <meta property="og:image:width" content="1440">
 <meta property="og:image:height" content="900">
 <meta content="" property="og:image:alt">
 <meta property="og:url" content="{{ request()->getUri() }}"/>
 <meta property="og:type" content="website" />
-<meta content="https://www.linkedin.com/" property="og:see_also">
+<meta content="https://github.com/engetschwiler" property="og:see_also">
+<meta content="https://www.linkedin.com/in/yves-engetschwiler/" property="og:see_also">
+<meta content="https://pinkary.com/@interactive" property="og:see_also">
 <meta content="https://x.com/yvesdesign" property="og:see_also">
+<meta content="https://instagram.com/derailleurch" property="og:see_also">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@yvesdesign">
 <meta name="twitter:creator" content="@yvesdesign">
 <meta name="twitter:title" content="{{ $title ?? '' }}">
 <meta name="twitter:description" content="{{ $description ?? '' }}">
-<meta name="twitter:image" content="{{ $card ?? url('/images/og-image.jpg') }}">
+<meta name="twitter:image" content="{{ $card ?? url('/images/og-image.png') }}">
 <meta name="twitter:image:width" content="1440">
 <meta name="twitter:image:height" content="900">
 

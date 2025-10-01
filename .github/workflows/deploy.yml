@@ -1,0 +1,68 @@
+name: Deploy Interactive application
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone New Release
+        uses: actions/checkout@v3
+
+      - name: Set up SSH Agent
+        uses: webfactory/ssh-agent@v0.7.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.3
+
+      - name: Deploy to Server
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.VPS_HOST }}
+          REMOTE_USER: ${{ secrets.VPS_USER }}
+          TARGET: ${{ secrets.VPS_TARGET }}
+          BASE_DIR: ${{ secrets.VPS_TARGET }}
+        run: |
+          # Define release directory with timestamp
+          TIMESTAMP=$(date +'%Y%m%d%H%M%S')
+          RELEASE_DIR="${{ secrets.VPS_TARGET }}/releases/$TIMESTAMP"
+
+          # Step 1: Create the new release directory
+          ssh -o StrictHostKeyChecking=no $REMOTE_USER@$REMOTE_HOST "mkdir -p $RELEASE_DIR"
+
+          # Step 2: Sync the code to the new release directory
+          rsync -avz --exclude='.git' --exclude='node_modules' --exclude='storage' ./ $REMOTE_USER@$REMOTE_HOST:$RELEASE_DIR
+
+          ssh $REMOTE_USER@$REMOTE_HOST << EOF
+            ln -nfs $BASE_DIR/storage $RELEASE_DIR/storage
+            ln -nfs $BASE_DIR/.env $RELEASE_DIR/.env
+          EOF
+
+          # Step 4: Run deployment commands on the server
+          ssh $REMOTE_USER@$REMOTE_HOST << EOF
+            cd $RELEASE_DIR
+            # Install dependencies and other necessary setup
+            /usr/local/php83/bin/php /usr/local/php83/bin/composer install --no-interaction --prefer-dist --optimize-autoloader
+          EOF
+
+          # Step 5: Update the current symlink
+          ssh $REMOTE_USER@$REMOTE_HOST "rsync -a --delete $RELEASE_DIR/* ${{ secrets.VPS_TARGET }}/live"
+
+          ssh $REMOTE_USER@$REMOTE_HOST << EOF
+            ln -nfs $BASE_DIR/storage ${{ secrets.VPS_TARGET }}/live/storage
+            ln -nfs $BASE_DIR/.env ${{ secrets.VPS_TARGET }}/live/.env
+          EOF
+
+          ssh $REMOTE_USER@$REMOTE_HOST << EOF
+            cd ${{ secrets.VPS_TARGET }}/live
+            /usr/local/php83/bin/php artisan storage:link
+            /usr/local/php83/bin/php artisan migrate --force
+            /usr/local/php83/bin/php artisan optimize:clear
+          EOF

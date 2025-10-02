@@ -11,7 +11,7 @@
         <section>
             <h2 class="italic font-serif">Now</h2>
 
-            <p>Currently working at <a target="_blank" href="https://bee-interactive.ch" class="underline underline-offset-4 hover:text-emerald-500 transition-colors">bee interactive</a> crafting solutions for the web using Laravel. I'm also available for consulting and speaking.</p>
+            <p>Currently working at <a target="_blank" href="https://bee-interactive.ch" class="underline underline-offset-4 hover:text-emerald-500 transition-colors">bee interactive</a> crafting solutions for the web using Laravel. I'm also available for consulting and <a href="https://www.youtube.com/@swiss-laravel-association" title="Youtube – New tab" target="_blank" class="underline underline-offset-4 hover:text-emerald-500 transition-colors">speaking</a>.</p>
         </section>
 
         <section>

@@ -12,10 +12,16 @@
             <x-h2 class="italic font-serif mb-2">Now</x-h2>
 
             <div class="space-y-4">
-                <x-text>Currently working at <x-link target="_blank" href="https://bee-interactive.ch">bee interactive</x-link> crafting solutions for the web using Laravel. I’m also available for consulting and <x-link href="https://www.youtube.com/@swiss-laravel-association" title="Youtube – New tab" target="_blank">speaking</x-link>.</x-text>
+                <x-text>Currently working at <x-link target="_blank" href="https://bee-interactive.ch">bee interactive</x-link> crafting solutions for the web using Laravel. I'm also available for consulting and <x-link href="https://www.youtube.com/@swiss-laravel-association" title="Youtube – New tab" target="_blank">speaking</x-link>.</x-text>
 
-                <x-text>When I’m not wrestling with semicolons and finals, you’ll find me cycling around the mountains of Switzerland. Speaking of things I enjoy, if you’re interested, you can check the <x-link href="/uses">software and hardware I use</x-link>.</x-text>
+                <x-text>When I'm not wrestling with semicolons and finals, you'll find me cycling around the mountains of Switzerland. Speaking of things I enjoy, if you're interested, you can check the <x-link href="/uses">software and hardware I use</x-link>.</x-text>
             </div>
+        </section>
+
+        <section>
+            <x-h2 class="italic font-serif mb-2">Talks</x-h2>
+
+            <x-text>I enjoy sharing my experience at Laravel and tech conferences. Check out my <x-link href="/talks">talks and presentations</x-link>.</x-text>
         </section>
 
         <section>

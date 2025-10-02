@@ -12,6 +12,7 @@ test('sitemap contains all pages', function () {
 
     expect($content)->toContain('https://engetschwiler.dev/');
     expect($content)->toContain('https://engetschwiler.dev/uses');
+    expect($content)->toContain('https://engetschwiler.dev/talks');
     expect($content)->toContain('https://engetschwiler.dev/colophon');
     expect($content)->toContain('https://engetschwiler.dev/privacy');
 });

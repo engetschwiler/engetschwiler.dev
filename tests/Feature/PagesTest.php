@@ -24,6 +24,12 @@ test('privacy page returns a successful response', function () {
     $response->assertStatus(200);
 });
 
+test('talks page returns a successful response', function () {
+    $response = $this->get('/talks');
+
+    $response->assertStatus(200);
+});
+
 test('home page contains expected title', function () {
     $response = $this->get('/');
 
@@ -46,4 +52,10 @@ test('privacy page contains expected title', function () {
     $response = $this->get('/privacy');
 
     $response->assertSee('Privacy Policy');
+});
+
+test('talks page contains expected title', function () {
+    $response = $this->get('/talks');
+
+    $response->assertSee('Talks and presentations');
 });

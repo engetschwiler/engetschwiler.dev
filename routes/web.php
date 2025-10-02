@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'home')->name('home');
 Route::view('/uses', 'uses')->name('uses');
+Route::view('/talks', 'talks')->name('talks');
 Route::view('/colophon', 'colophon')->name('colophon');
 Route::view('/privacy', 'privacy')->name('privacy');
 

@@ -25,6 +25,12 @@
         </section>
 
         <section>
+            <x-h2 class="italic font-serif">YouTube Videos</x-h2>
+
+            <x-text class="my-4">Some pages include embedded YouTube videos. While I cannot control YouTube's cookie and privacy policies, these embeds are provided for your convenience. YouTube may set cookies when you interact with the video player.</x-text>
+        </section>
+
+        <section>
             <x-h2 class="italic font-serif">Open Source</x-h2>
 
             <x-text class="my-4">The source code for this website is publicly available on GitHub. You are free to review, reuse, or contribute to the code.</x-text>

@@ -13,6 +13,12 @@
 
     <div class="space-y-8 md:space-y-12">
         <section>
+            <div class="rounded-xl bg-gray-200 p-1 shadow-inner">
+                <img class="rounded-lg border border-zinc-400" src="{{ asset('images/workstation.jpg') }}" alt="My workstation">
+            </div>
+        </section>
+
+        <section>
             <h2 class="italic font-serif">Hardware</h2>
 
             <p class="my-4">Hardware I use every day.</p>

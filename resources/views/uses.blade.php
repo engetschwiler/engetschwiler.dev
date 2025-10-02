@@ -25,8 +25,9 @@
 
             <ul>
                 <li>Macbook Pro M1</li>
+                <li>Mac Mini M1</li>
                 <li>Mac Mini M4</li>
-                <li>Logitech MX Keyboard & Mx Master 4</li>
+                <li>Logitech MX Keyboard & Mx Master 3 and 4 mouse</li>
                 <li>Apple AirPods pro</li>
             </ul>
         </section>
@@ -44,9 +45,15 @@
                 <li>TablePlus</li>
                 <li>Brave Browser</li>
                 <li>Transmit</li>
+                <li>Figma</li>
+                <li>Slack</li>
                 <li>Kaleidoscope</li>
                 <li>ColorSnapper2</li>
+                <li>Xnapper</li>
+                <li>Rectangle</li>
+                <li>Raycast</li>
                 <li>Popcorn</li>
+                <li>IINA</li>
                 <li>Spotify</li>
             </ul>
         </section>

@@ -9,17 +9,26 @@
 
     <div class="space-y-8 md:space-y-12">
         <section>
-            <h2 class="italic font-serif">Now</h2>
+            <h2 class="italic font-serif mb-2">Now</h2>
 
-            <p>Currently working at <a target="_blank" href="https://bee-interactive.ch" class="underline underline-offset-4 hover:text-emerald-500 transition-colors">bee interactive</a> crafting solutions for the web using Laravel. I'm also available for consulting and <a href="https://www.youtube.com/@swiss-laravel-association" title="Youtube – New tab" target="_blank" class="underline underline-offset-4 hover:text-emerald-500 transition-colors">speaking</a>.</p>
+            <div class="space-y-4">
+                <p>Currently working at <a target="_blank" href="https://bee-interactive.ch" class="underline underline-offset-4 hover:text-emerald-500 transition-colors">bee interactive</a> crafting solutions for the web using Laravel. I'm also available for consulting and <a href="https://www.youtube.com/@swiss-laravel-association" title="Youtube – New tab" target="_blank" class="underline underline-offset-4 hover:text-emerald-500 transition-colors">speaking</a>.</p>
+
+                <p>When I'm not wrestling with semicolons and finals, you'll find me cycling around the mountains of Switzerland. Speaking of things I enjoy, if you're interested, you can check the <a href="/uses" class="underline underline-offset-4 hover:text-emerald-500 transition-colors">software and hardware I use</a>.</p>
+            </div>
         </section>
 
         <section>
-            <p>When I'm not wrestling with semicolons and finals, you'll find me cycling around the mountains of Switzerland. Speaking of things I enjoy, if you're interested, you can check the <a href="/uses" class="underline underline-offset-4 hover:text-emerald-500 transition-colors">software and hardware I use</a>.</p>
+            <h2 class="italic font-serif mb-2">Open source</h2>
+
+            <p><strong>Livewire Filemanager package</strong></p>
+            <p>It's a simple, friendly, and practical file manager designed specifically for Laravel applications.</p>
+
+            <p><a href="https://github.com/livewire-filemanager/filemanager" target="_blank" class="underline underline-offset-4 hover:text-emerald-500 transition-colors">Discover the project and contribute on Github</a></p>
         </section>
 
         <section>
-            <h2 class="italic font-serif">Find me on</h2>
+            <h2 class="italic font-serif mb-2">Find me on</h2>
 
             <ul class="flex flex-wrap space-x-2 space-y-2 md:flex-nowrap md:space-y-0 md:space-x-4">
                 <li><a href="https://github.com/engetschwiler" target="_blank" class="underline underline-offset-4 hover:text-emerald-500 transition-colors"><span>Github</span></a></li>

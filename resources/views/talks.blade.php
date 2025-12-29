@@ -13,6 +13,16 @@
 
     <div class="space-y-8 md:space-y-12">
         <section>
+            <x-h2 class="italic font-serif"><strong>09 December 2025 - Helga, Bern</strong></x-h2>
+
+            <x-text class="my-4">For many years, I've been developing a small, customized CMS for my multilingual clients. I'll introduce you to the most important features of the CMS.</x-text>
+
+            <div class="aspect-video rounded-xl bg-gray-200 p-1 shadow-inner dark:bg-emerald-900">
+                <iframe class="h-full w-full rounded-lg" src="https://www.youtube.com/embed/EomID_GU4xk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section>
             <x-h2 class="italic font-serif"><strong>30 June 2025 - Neustadt Agentur, Luzern</strong></x-h2>
 
             <x-text class="my-4">In my first major side project, I share how I'm taking control of part of my financial life while building my coding skills. Along the way, I'm diving into Laravel, learning its ins and outs, and staying up to date with the latest developments in the framework.</x-text>

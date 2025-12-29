@@ -13,7 +13,7 @@
 
     <div class="space-y-8 md:space-y-12">
         <section>
-            <x-h2 class="italic font-serif"><strong>09 December 2025 - Helga, Bern</strong></x-h2>
+            <x-h2 class="italic font-serif"><strong>9 December 2025 - Helga, Bern</strong></x-h2>
 
             <x-text class="my-4">For many years, I've been developing a small, customized CMS for my multilingual clients. I'll introduce you to the most important features of the CMS.</x-text>
 

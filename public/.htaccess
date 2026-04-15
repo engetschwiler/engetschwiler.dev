@@ -1,4 +1,4 @@
-Use php-fpm php83
+Use php-fpm php84
 
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>

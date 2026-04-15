@@ -1,6 +1,9 @@
 <?php
 
+use App\Providers\AppServiceProvider;
+use App\Providers\BladeComponentsServiceProvider;
+
 return [
-    App\Providers\AppServiceProvider::class,
-    App\Providers\BladeComponentsServiceProvider::class,
+    AppServiceProvider::class,
+    BladeComponentsServiceProvider::class,
 ];

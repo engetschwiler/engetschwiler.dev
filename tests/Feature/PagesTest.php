@@ -36,6 +36,15 @@ test('home page contains expected title', function () {
     $response->assertSee('I’m a web and application developer', false);
 });
 
+test('home page shows the latest article', function () {
+    $response = $this->get('/');
+
+    $response->assertSee('Latest article');
+    $response->assertSee('Recovering a Corrupted Encrypted macOS DMG');
+    $response->assertSee('15 April 2026');
+    $response->assertSee('Browse all articles');
+});
+
 test('uses page contains expected title', function () {
     $response = $this->get('/uses');
 

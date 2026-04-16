@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Services\ArticleRepository;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -11,7 +12,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        $this->app->singleton(ArticleRepository::class, fn () => new ArticleRepository(base_path('content/articles')));
     }
 
     /**

@@ -7,18 +7,25 @@ test('sitemap returns a successful response', function () {
     $response->assertHeader('Content-Type', 'application/xml');
 });
 
-test('sitemap contains all pages', function () {
-    $content = file_get_contents(public_path('sitemap.xml'));
+test('sitemap contains all static pages', function () {
+    $content = $this->get('/sitemap.xml')->getContent();
 
-    expect($content)->toContain('https://engetschwiler.dev/');
-    expect($content)->toContain('https://engetschwiler.dev/uses');
-    expect($content)->toContain('https://engetschwiler.dev/talks');
-    expect($content)->toContain('https://engetschwiler.dev/colophon');
-    expect($content)->toContain('https://engetschwiler.dev/privacy');
+    expect($content)->toContain(route('home'));
+    expect($content)->toContain(route('uses'));
+    expect($content)->toContain(route('talks'));
+    expect($content)->toContain(route('articles.index'));
+    expect($content)->toContain(route('colophon'));
+    expect($content)->toContain(route('privacy'));
+});
+
+test('sitemap includes published articles', function () {
+    $content = $this->get('/sitemap.xml')->getContent();
+
+    expect($content)->toContain('/articles/2026/04/15/recovering-corrupted-encrypted-dmg');
 });
 
 test('sitemap is valid xml', function () {
-    $content = file_get_contents(public_path('sitemap.xml'));
+    $content = $this->get('/sitemap.xml')->getContent();
 
     expect($content)->toContain('<?xml version="1.0" encoding="UTF-8"?>');
     expect($content)->toContain('<urlset');

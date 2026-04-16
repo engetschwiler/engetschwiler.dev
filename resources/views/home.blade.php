@@ -18,6 +18,23 @@
             </div>
         </section>
 
+        @isset($latestArticle)
+            <section>
+                <x-h2 class="italic font-serif mb-2">Latest article</x-h2>
+
+                <x-text>
+                    <x-link href="{{ $latestArticle->url() }}">{{ $latestArticle->title }}</x-link>
+                    <span class="opacity-75">— {{ $latestArticle->date->format('j F Y') }}</span>
+                </x-text>
+
+                @if ($latestArticle->description !== '')
+                    <x-text class="mt-2">{{ $latestArticle->description }}</x-text>
+                @endif
+
+                <x-text class="mt-2"><x-link href="{{ route('articles.index') }}">Browse all articles &rarr;</x-link></x-text>
+            </section>
+        @endisset
+
         <section>
             <x-h2 class="italic font-serif mb-2">Talks</x-h2>
 

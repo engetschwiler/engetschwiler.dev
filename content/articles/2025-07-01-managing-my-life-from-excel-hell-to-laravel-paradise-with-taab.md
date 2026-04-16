@@ -13,7 +13,7 @@ Like many people, I started with an Excel spreadsheet. But after spending way to
 
 Taab runs on Laravel and uses event sourcing (thanks Spatie!), Alpine.js, and Livewire. I've plugged in services like Mindee for receipt scanning, OpenRoute for calculating professional travel distances, and Algolia for lightning-fast search. The project has become my personal tech sandbox — whenever a new Laravel feature drops, Taab is where I try it out first.
 
-![Taab application dashboard](/articles/images/2025-07-01-managing-my-life-from-excel-hell-to-laravel-paradise-with-taab/dashboard.png "Taab application dashboard")
+![Taab application dashboard](/img/articles/2025-07-01-managing-my-life-from-excel-hell-to-laravel-paradise-with-taab/dashboard.png "Taab application dashboard")
 
 ## What Taab does for me
 
@@ -23,13 +23,13 @@ Taab runs on Laravel and uses event sourcing (thanks Spatie!), Alpine.js, and Li
 - **Easy entries:** Scan tickets with Mindee, set up recurring expenses, and use payment templates for common transactions.
 - **Bulk import:** Drop a stack of tickets at once, with automatic duplicate detection so nothing gets counted twice.
 
-![Transaction entry menu](/articles/images/2025-07-01-managing-my-life-from-excel-hell-to-laravel-paradise-with-taab/add-transactions.png "Transaction entry menu in Taab")
+![Transaction entry menu](/img/articles/2025-07-01-managing-my-life-from-excel-hell-to-laravel-paradise-with-taab/add-transactions.png "Transaction entry menu in Taab")
 
 ## Making tax season (almost) enjoyable
 
 When tax season comes around, Taab's reports give me an instant overview of the year's income and expenses. Filling out forms becomes a simple copy-paste exercise, and year-over-year comparisons make it easy to spot trends or anomalies.
 
-![VAT summary view](/articles/images/2025-07-01-managing-my-life-from-excel-hell-to-laravel-paradise-with-taab/vat-stats.png "VAT summary view in the Taab application")
+![VAT summary view](/img/articles/2025-07-01-managing-my-life-from-excel-hell-to-laravel-paradise-with-taab/vat-stats.png "VAT summary view in the Taab application")
 
 ## Integrating into my workflow
 
@@ -39,7 +39,7 @@ I also built a companion project management application called Flux. It synchron
 
 Event sourcing is at the heart of the application. Every action is recorded as an event, which means I can replay my entire financial history, debug issues effortlessly, and trace the origin of any anomaly. It's the kind of architecture that pays off more and more as the data grows.
 
-![Category statistics over 4 years](/articles/images/2025-07-01-managing-my-life-from-excel-hell-to-laravel-paradise-with-taab/category-stats.png "Category statistics added in Taab for a 4-year overview")
+![Category statistics over 4 years](/img/articles/2025-07-01-managing-my-life-from-excel-hell-to-laravel-paradise-with-taab/category-stats.png "Category statistics added in Taab for a 4-year overview")
 
 ## Real-world hacks and lessons learned
 

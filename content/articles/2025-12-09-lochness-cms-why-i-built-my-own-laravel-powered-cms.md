@@ -15,11 +15,11 @@ Back in 2008, I built my first homegrown system, "human CMS". It was a very simp
 
 It was messy technically, but it worked. One big drawback: the CMS was merged into each project. If I wanted to update the CMS, I had to touch every site individually.
 
-![The human CMS admin panel overlaid on the website, with TinyMCE editor and inline navigation](/articles/images/2025-12-09-lochness-cms-why-i-built-my-own-laravel-powered-cms/human-cms.png "The human CMS — my first homegrown content management system, circa 2008")
+![The human CMS admin panel overlaid on the website, with TinyMCE editor and inline navigation](/img/articles/2025-12-09-lochness-cms-why-i-built-my-own-laravel-powered-cms/human-cms.png "The human CMS — my first homegrown content management system, circa 2008")
 
 A few years later I created "interactive CMS", which was a big step forward. The CMS became a separate admin area: you logged in, saw a dashboard of shortcuts, and managed content independently of the front-end. The UI was more structured: table views, search, language switching, media management, and tabs for multilingual content. Technically it was built with PHP 7, early Laravel, the Caffeinated modules package, Gulp, Stylus, and jQuery. It was still tightly integrated into each project, but the concept of a reusable back-office was there.
 
-![The interactive CMS dashboard with structured tile shortcuts for content management](/articles/images/2025-12-09-lochness-cms-why-i-built-my-own-laravel-powered-cms/interactive-cms.png "The interactive CMS — a separate admin area with a dashboard of shortcuts, built with early Laravel")
+![The interactive CMS dashboard with structured tile shortcuts for content management](/img/articles/2025-12-09-lochness-cms-why-i-built-my-own-laravel-powered-cms/interactive-cms.png "The interactive CMS — a separate admin area with a dashboard of shortcuts, built with early Laravel")
 
 Since around 2019, those ideas have evolved into what I now call Lochness CMS.
 
@@ -54,7 +54,7 @@ There are a few key principles that guide it:
 
 When you log into Lochness, you land on a dashboard made of tiles. Some tiles are built into the CMS (content sections, media, translations, cache tools), others can be project-specific.
 
-![The Lochness CMS dashboard with modern tile layout for news, SEO, media, translations and more](/articles/images/2025-12-09-lochness-cms-why-i-built-my-own-laravel-powered-cms/lochness-cms.png "The Lochness CMS cockpit — a clean, modern dashboard with project-specific tiles")
+![The Lochness CMS dashboard with modern tile layout for news, SEO, media, translations and more](/img/articles/2025-12-09-lochness-cms-why-i-built-my-own-laravel-powered-cms/lochness-cms.png "The Lochness CMS cockpit — a clean, modern dashboard with project-specific tiles")
 
 The cockpit is fully bilingual (currently French and English), and supports dark mode. I originally underestimated dark mode until a client told me they couldn't see a button I was talking about — because I had only styled it for light mode. Since then, I've made sure the entire interface works well in both themes.
 

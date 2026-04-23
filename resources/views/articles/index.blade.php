@@ -12,6 +12,10 @@
 
     <x-h1>Articles</x-h1>
 
+    <x-text class="my-2 text-sm opacity-75">
+        Subscribe via <x-link href="{{ route('feed') }}">RSS</x-link>.
+    </x-text>
+
     @if ($articles->isEmpty())
         <x-text class="italic">No articles yet.</x-text>
     @else

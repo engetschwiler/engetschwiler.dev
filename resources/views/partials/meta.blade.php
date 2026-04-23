@@ -30,6 +30,7 @@
 <link href="https://engetschwiler.dev" hreflang="en" rel="home">
 
 <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+<link rel="alternate" type="application/rss+xml" title="Yves Engetschwiler — Articles" href="{{ route('feed') }}" />
 
 @if (isset($canonical) && $canonical)
 <link rel="canonical" href="{{ $canonical }}" />

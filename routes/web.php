@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\FeedController;
 use App\Http\Controllers\SitemapController;
 use App\Services\ArticleRepository;
 use Illuminate\Support\Facades\Route;
@@ -18,4 +19,5 @@ Route::get('/articles/{year}/{month}/{day}/{slug}', [ArticleController::class, '
     ->where(['year' => '\d{4}', 'month' => '\d{2}', 'day' => '\d{2}'])
     ->name('articles.show');
 
+Route::get('/feed.xml', FeedController::class)->name('feed');
 Route::get('/sitemap.xml', SitemapController::class)->name('sitemap');

@@ -1,4 +1,7 @@
-# Building Alpage: What I Learned Writing a Native macOS Dev Environment in Swift, with AI as a Pair
+---
+title: "Building Alpage: What I Learned Writing a Native macOS Dev Environment in Swift, with AI as a Pair"
+description: A native macOS menu bar app that manages a local web dev environment
+---
 
 ## Why I Started
 

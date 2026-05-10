@@ -14,6 +14,10 @@ Route::view('/talks', 'talks')->name('talks');
 Route::view('/colophon', 'colophon')->name('colophon');
 Route::view('/privacy', 'privacy')->name('privacy');
 
+Route::get('/sitemap', fn (ArticleRepository $articles) => view('sitemap-page', [
+    'articles' => $articles->all(),
+]))->name('sitemap.html');
+
 Route::get('/articles', [ArticleController::class, 'index'])->name('articles.index');
 Route::get('/articles/{year}/{month}/{day}/{slug}', [ArticleController::class, 'show'])
     ->where(['year' => '\d{4}', 'month' => '\d{2}', 'day' => '\d{2}'])

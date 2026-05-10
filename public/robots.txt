@@ -1,2 +1,5 @@
 User-agent: *
 Disallow:
+
+Sitemap: https://engetschwiler.dev/sitemap.xml
+LLM-Content: https://engetschwiler.dev/llms.txt

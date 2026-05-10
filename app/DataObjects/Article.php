@@ -23,4 +23,9 @@ final readonly class Article
             'slug' => $this->slug,
         ]);
     }
+
+    public function wordCount(): int
+    {
+        return str_word_count(strip_tags($this->html));
+    }
 }

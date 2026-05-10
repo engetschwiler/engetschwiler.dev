@@ -38,6 +38,7 @@
                 <div class="flex space-x-4">
                     <x-link href="/colophon">Colophon</x-link>
                     <x-link href="/privacy">Privacy</x-link>
+                    <x-link href="/sitemap">Sitemap</x-link>
                 </div>
             </footer>
         </div>

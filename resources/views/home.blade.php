@@ -7,9 +7,9 @@
     <x-text>Hey, it’s Yves 👋!</x-text>
     <x-h1>I’m a web and application developer, and speaker based in Vevey, Switzerland.</x-h1>
 
-    <div class="space-y-8 md:space-y-12">
+    <div class="space-y-8 md:space-y-12 xl:space-y-20">
         <section>
-            <x-h2 class="italic font-serif mb-2">Now</x-h2>
+            <x-h2 class="italic font-serif mb-2 text-xl">Now</x-h2>
 
             <div class="space-y-4">
                 <x-text>Currently working at <x-link target="_blank" href="https://bee-interactive.ch">bee interactive</x-link> crafting solutions for the web using Laravel. I'm also available for consulting and <x-link href="https://www.youtube.com/@swiss-laravel-association" title="Youtube – New tab" target="_blank">speaking</x-link>.</x-text>
@@ -20,7 +20,7 @@
 
         @isset($latestArticle)
             <section>
-                <x-h2 class="italic font-serif mb-2">Latest article</x-h2>
+                <x-h2 class="italic font-serif mb-2 text-xl">Latest article</x-h2>
 
                 <x-text>
                     <x-link href="{{ $latestArticle->url() }}">{{ $latestArticle->title }}</x-link>
@@ -31,18 +31,18 @@
                     <x-text class="mt-2">{{ $latestArticle->description }}</x-text>
                 @endif
 
-                <x-text class="mt-2"><x-link href="{{ route('articles.index') }}">Browse all articles &rarr;</x-link></x-text>
+                <x-text class="mt-6"><x-link href="{{ route('articles.index') }}">Browse all articles &rarr;</x-link></x-text>
             </section>
         @endisset
 
         <section>
-            <x-h2 class="italic font-serif mb-2">Talks</x-h2>
+            <x-h2 class="italic font-serif mb-2 text-xl">Talks</x-h2>
 
             <x-text>I enjoy sharing my experience at Laravel and tech conferences. Check out my <x-link href="/talks">talks and presentations</x-link>.</x-text>
         </section>
 
         <section>
-            <x-h2 class="italic font-serif mb-2">Open source</x-h2>
+            <x-h2 class="italic font-serif mb-2 text-xl">Open source</x-h2>
 
             <x-text><strong>Livewire Filemanager package</strong></x-text>
             <x-text>It’s a simple, friendly, and practical file manager designed specifically for Laravel applications.</x-text>
@@ -51,7 +51,7 @@
         </section>
 
         <section>
-            <x-h2 class="italic font-serif mb-2">Find me on</x-h2>
+            <x-h2 class="italic font-serif mb-2 text-xl">Find me on</x-h2>
 
             <ul class="flex flex-wrap space-x-2 space-y-2 md:flex-nowrap md:space-y-0 md:space-x-4">
                 <li><x-link href="https://github.com/engetschwiler" target="_blank"><span>Github</span></x-link></li>

@@ -4,6 +4,31 @@
     </x-slot>
     <x-slot name="pan">page-articles</x-slot>
 
+    @push('head')
+        <script type="application/ld+json">
+        {!! json_encode([
+            '@context' => 'https://schema.org',
+            '@type' => 'Blog',
+            '@id' => route('articles.index').'#blog',
+            'url' => route('articles.index'),
+            'name' => 'Articles — Yves Engetschwiler',
+            'description' => 'Articles and notes on Laravel, PHP, and web development by Yves Engetschwiler.',
+            'inLanguage' => 'en',
+            'author' => ['@id' => url('/#person')],
+            'publisher' => ['@id' => url('/#person')],
+            'isPartOf' => ['@id' => url('/#website')],
+            'blogPost' => $articles->map(fn ($a) => [
+                '@type' => 'BlogPosting',
+                'headline' => $a->title,
+                'description' => $a->description,
+                'url' => $a->url(),
+                'datePublished' => $a->date->toAtomString(),
+                'author' => ['@id' => url('/#person')],
+            ])->all(),
+        ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
+        </script>
+    @endpush
+
     <div class="flex space-x-4">
         <x-link href="/">&larr; Back</x-link>
 

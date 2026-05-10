@@ -4,12 +4,13 @@
 <title>{!! $title ?? 'Yves Engetschwiler, web & applications since 2002' !!}</title>
 
 <meta name="description" content="{{ $description ?? '' }}">
+<meta name="author" content="Yves Engetschwiler">
 <meta property="og:title" content="{{ $title ?? '' }}"/>
 <meta property="og:description" content="{{ $description ?? '' }}"/>
 <meta property="og:image" content="{{ $card ?? url('/images/og-image.png') }}"/>
 <meta property="og:image:width" content="1440">
 <meta property="og:image:height" content="900">
-<meta content="" property="og:image:alt">
+<meta content="Yves Engetschwiler — web & application developer" property="og:image:alt">
 <meta property="og:url" content="{{ request()->getUri() }}"/>
 <meta property="og:type" content="website" />
 <meta content="https://github.com/engetschwiler" property="og:see_also">
@@ -41,3 +42,36 @@
 @endif
 
 @include('partials.favicons')
+
+<script type="application/ld+json">
+{!! json_encode([
+    '@context' => 'https://schema.org',
+    '@graph' => [
+        [
+            '@type' => 'Person',
+            '@id' => url('/#person'),
+            'name' => 'Yves Engetschwiler',
+            'url' => url('/'),
+            'jobTitle' => 'Web & Application Developer',
+            'image' => url('/images/og-image.png'),
+            'sameAs' => [
+                'https://github.com/engetschwiler',
+                'https://www.linkedin.com/in/yves-engetschwiler/',
+                'https://pinkary.com/@interactive',
+                'https://x.com/yvesdesign',
+                'https://instagram.com/derailleurch',
+            ],
+        ],
+        [
+            '@type' => 'WebSite',
+            '@id' => url('/#website'),
+            'url' => url('/'),
+            'name' => 'Yves Engetschwiler',
+            'description' => 'Personal site of Yves Engetschwiler — articles, talks, and notes on Laravel, PHP, and web development.',
+            'inLanguage' => 'en',
+            'publisher' => ['@id' => url('/#person')],
+        ],
+    ],
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
+</script>
+

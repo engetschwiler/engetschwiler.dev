@@ -6,6 +6,7 @@ $staticPages = [
     ['route' => 'articles.index', 'priority' => '0.80'],
     ['route' => 'colophon', 'priority' => '0.80'],
     ['route' => 'privacy', 'priority' => '0.80'],
+    ['route' => 'sitemap.html', 'priority' => '0.50'],
 ];
 $defaultLastmod = now()->toAtomString();
 ?><?= '<?xml version="1.0" encoding="UTF-8"?>'."\n" ?>
@@ -28,4 +29,9 @@ $defaultLastmod = now()->toAtomString();
   <priority>0.70</priority>
 </url>
 @endforeach
+<url>
+  <loc>{{ url('/llms.txt') }}</loc>
+  <lastmod>{{ $defaultLastmod }}</lastmod>
+  <priority>0.50</priority>
+</url>
 </urlset>

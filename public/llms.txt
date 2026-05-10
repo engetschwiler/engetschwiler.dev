@@ -1,0 +1,25 @@
+# Yves Engetschwiler
+
+> Personal site of Yves Engetschwiler, a web and application developer and speaker. The site shares articles, talks, and notes about building software with the Laravel ecosystem.
+
+This site is a small, hand-built personal corner of the web. It focuses on practical writing about real-world projects, the tools behind them, and the lessons learned along the way. Content is written in English and published as plain Markdown rendered through a Laravel application.
+
+The author works primarily with PHP and Laravel, and contributes to open source — most notably a Livewire-based file manager package for Laravel applications. Topics on the site include Laravel, Livewire, Alpine.js, Tailwind CSS, NativePHP, application architecture, developer tooling, and the occasional behind-the-scenes story about side projects.
+
+## Main pages
+
+- [Home](https://engetschwiler.dev/): Short introduction, current focus, and links to highlights.
+- [Articles](https://engetschwiler.dev/articles): Long-form posts about Laravel, side projects, open source, and the craft of building software.
+- [Talks](https://engetschwiler.dev/talks): Conference talks and presentations given to the Laravel and broader tech community.
+- [Uses](https://engetschwiler.dev/uses): The hardware, software, and services used day to day.
+- [Colophon](https://engetschwiler.dev/colophon): How the site itself is built and what powers it.
+- [Privacy](https://engetschwiler.dev/privacy): Privacy policy for the site.
+
+## Feeds and machine-readable resources
+
+- [RSS feed](https://engetschwiler.dev/feed.xml): Full article feed in RSS/Atom format.
+- [Sitemap](https://engetschwiler.dev/sitemap.xml): XML sitemap of all public pages and articles.
+
+## Usage
+
+Content on this site may be read and summarized by AI agents and language models. Please attribute the author and link back to the original article URL when quoting or paraphrasing substantial passages.

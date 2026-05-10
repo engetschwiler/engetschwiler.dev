@@ -2,4 +2,5 @@ User-agent: *
 Disallow:
 
 Sitemap: https://engetschwiler.dev/sitemap.xml
-LLM-Content: https://engetschwiler.dev/llms.txt
+
+# llms.txt is available at https://engetschwiler.dev/llms.txt

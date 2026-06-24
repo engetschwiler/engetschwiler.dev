@@ -13,6 +13,16 @@
 
     <div class="space-y-8 md:space-y-12">
         <section>
+            <x-h2 class="italic font-serif"><strong>28 May 2025 - Infomaniak, Geneva</strong></x-h2>
+
+            <x-text class="my-4">Working with AI every day changes more than your tooling. It slowly reshapes your skills, your ambitions, and how you feel about your own value as a developer.</x-text>
+
+            <div class="aspect-video rounded-xl bg-gray-200 p-1 shadow-inner dark:bg-emerald-900">
+                <iframe class="h-full w-full rounded-lg" src="https://www.youtube.com/embed/kN2R0JoluWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section>
             <x-h2 class="italic font-serif"><strong>9 December 2025 - Helga, Bern</strong></x-h2>
 
             <x-text class="my-4">For many years, I've been developing a small, customized CMS for my multilingual clients. I'll introduce you to the most important features of the CMS.</x-text>

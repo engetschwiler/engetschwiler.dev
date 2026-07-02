@@ -1,11 +1,11 @@
 ---
-title: "What Long-Distance Cycling Taught Me About Being a Better Developer"
-description: I spend my days in Laravel. But I've also spent weeks in the saddle, crossing Europe all the way to Nordkapp. The road taught me things about my craft that no documentation ever could.
+title: "What long-distance cycling taught me about being a better developer"
+description: I spend my days with Laravel. But I've also spent weeks in the saddle, crossing Europe all the way to Nordkapp. The road taught me things about my craft that no documentation ever could.
 ---
 
 *And what it changes, concretely, for my clients.*
 
-I spend my days in Laravel. But I've also spent weeks in the saddle, crossing Europe all the way to Nordkapp. And oddly enough, the road taught me things about my craft that no documentation ever could. Here are the main ones, and, more importantly, what they mean for you when we work together.
+I spend my days with Laravel. But I've also spent weeks in the saddle, crossing Europe all the way to Nordkapp. And oddly enough, the road taught me things about my craft that no documentation ever could. Here are the main ones, and, more importantly, what they mean for you when we work together.
 
 ![A fully loaded touring bike on a long, empty road heading towards the mountains](/img/articles/2026-07-02-what-long-distance-cycling-taught-me-about-being-a-better-developer/on-the-road.jpg "Weeks in the saddle: just you, the panniers, and the road")
 

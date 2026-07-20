@@ -3,11 +3,11 @@ title: "The one rule that won me a World Cup prediction league"
 description: I finished first out of 100 in a World Cup prediction league. The data set the baseline; the points came from knowing exactly when I was allowed to override it.
 ---
 
-I finished first out of 100 in the Bet Your Goal Open League with 114 points. I did not expect that when I signed up, and the way it happened turned out to be more interesting than the result itself.
+I finished first out of 100 in the Bet Your Goal Open League with 117 points. I did not expect that when I signed up, and the way it happened turned out to be more interesting than the result itself.
 
 The whole thing comes down to one rule I only articulated somewhere around the quarterfinals: **use the data to set the baseline, and override it only when you have a specific reason rather than a vague feeling.** Everything below is how I arrived at that, and the two times it cost me for ignoring it.
 
-![The Bet Your Goal dashboard showing 114 points and first place out of 100 in the Open League](/img/articles/2026-07-20-what-a-world-cup-prediction-league-taught-me-about-data-and-instinct/results.jpg "114 points, first out of 100")
+![The Bet Your Goal dashboard showing 117 points and first place out of 100 in the Open League](/img/articles/2026-07-20-what-a-world-cup-prediction-league-taught-me-about-data-and-instinct/results.jpg "117 points, first out of 100")
 
 ## The setup
 

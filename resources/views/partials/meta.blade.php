@@ -11,7 +11,7 @@
 <meta property="og:image:width" content="1440">
 <meta property="og:image:height" content="900">
 <meta content="Yves Engetschwiler — web & application developer" property="og:image:alt">
-<meta property="og:url" content="{{ request()->getUri() }}"/>
+<meta property="og:url" content="{{ $canonical ?? url()->current() }}"/>
 <meta property="og:type" content="website" />
 <meta content="https://github.com/engetschwiler" property="og:see_also">
 <meta content="https://www.linkedin.com/in/yves-engetschwiler/" property="og:see_also">
@@ -33,9 +33,7 @@
 <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
 <link rel="alternate" type="application/rss+xml" title="Yves Engetschwiler — Articles" href="{{ route('feed') }}" />
 
-@if (isset($canonical) && $canonical)
-<link rel="canonical" href="{{ $canonical }}" />
-@endif
+<link rel="canonical" href="{{ $canonical ?? url()->current() }}" />
 
 @if (isset($noIndex) && $noIndex)
 <meta name="robots" content="noindex">

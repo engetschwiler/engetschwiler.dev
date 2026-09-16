@@ -4,6 +4,7 @@ namespace App\Services;
 
 use App\DataObjects\Article;
 use App\Support\Markdown\FigureParagraphRenderer;
+use App\Support\Markdown\HighlightedCodeRenderer;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
@@ -11,19 +12,14 @@ use Illuminate\Support\Str;
 use League\CommonMark\Environment\Environment;
 use League\CommonMark\Extension\CommonMark\CommonMarkCoreExtension;
 use League\CommonMark\Extension\CommonMark\Node\Block\FencedCode;
-use League\CommonMark\Extension\CommonMark\Node\Block\IndentedCode;
 use League\CommonMark\Extension\FrontMatter\FrontMatterExtension;
 use League\CommonMark\Extension\FrontMatter\Output\RenderedContentWithFrontMatter;
 use League\CommonMark\Extension\GithubFlavoredMarkdownExtension;
 use League\CommonMark\MarkdownConverter;
 use League\CommonMark\Node\Block\Paragraph;
-use Spatie\CommonMarkHighlighter\FencedCodeRenderer;
-use Spatie\CommonMarkHighlighter\IndentedCodeRenderer;
 
 class ArticleRepository
 {
-    private const array LANGUAGES = ['php', 'javascript', 'typescript', 'css', 'scss', 'html', 'xml', 'bash', 'shell', 'json', 'yaml', 'sql', 'diff', 'markdown'];
-
     public function __construct(private readonly string $path)
     {
         //
@@ -108,8 +104,7 @@ class ArticleRepository
         $environment->addExtension(new CommonMarkCoreExtension);
         $environment->addExtension(new GithubFlavoredMarkdownExtension);
         $environment->addExtension(new FrontMatterExtension);
-        $environment->addRenderer(FencedCode::class, new FencedCodeRenderer(self::LANGUAGES));
-        $environment->addRenderer(IndentedCode::class, new IndentedCodeRenderer(self::LANGUAGES));
+        $environment->addRenderer(FencedCode::class, new HighlightedCodeRenderer, 10);
         $environment->addRenderer(Paragraph::class, new FigureParagraphRenderer, 10);
 
         return new MarkdownConverter($environment);

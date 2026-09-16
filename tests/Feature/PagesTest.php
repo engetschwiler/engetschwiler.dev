@@ -68,3 +68,17 @@ test('talks page contains expected title', function () {
 
     $response->assertSee('Talks and presentations');
 });
+
+test('canonical url ignores query parameters', function () {
+    $response = $this->get('/?ref=pinkary');
+
+    $response->assertSee('<link rel="canonical" href="'.url('/').'" />', false);
+    $response->assertSee('<meta property="og:url" content="'.url('/').'"/>', false);
+    $response->assertDontSee('ref=pinkary');
+});
+
+test('canonical url matches the article path', function () {
+    $response = $this->get('/articles?utm_source=newsletter');
+
+    $response->assertSee('<link rel="canonical" href="'.route('articles.index').'" />', false);
+});

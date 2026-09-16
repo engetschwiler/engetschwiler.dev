@@ -28,7 +28,7 @@ a:focus, a:focus-visible {
     outline: 2px dotted #e5e7eb;
 }
 
-/* Syntax highlighting — highlight.php tokens */
+/* Syntax highlighting — tempest/highlight tokens */
 .prose pre {
     background-color: #18181b;
     color: #e4e4e7;
@@ -125,64 +125,47 @@ a:focus, a:focus-visible {
     color: #6ee7b7;
 }
 
-.hljs-comment,
-.hljs-quote {
+.hl-comment {
     color: #9ca3af;
     font-style: italic;
 }
 
-.hljs-keyword,
-.hljs-selector-tag,
-.hljs-literal,
-.hljs-tag,
-.hljs-name {
+.hl-keyword {
     color: #f472b6;
 }
 
-.hljs-string,
-.hljs-attr,
-.hljs-symbol,
-.hljs-bullet,
-.hljs-addition {
+.hl-value,
+.hl-addition {
     color: #86efac;
 }
 
-.hljs-number,
-.hljs-meta,
-.hljs-regexp,
-.hljs-link {
+.hl-number,
+.hl-literal {
     color: #fbbf24;
 }
 
-.hljs-variable,
-.hljs-template-variable,
-.hljs-selector-id,
-.hljs-selector-attr,
-.hljs-selector-pseudo {
+.hl-variable,
+.hl-property {
     color: #7dd3fc;
 }
 
-.hljs-title,
-.hljs-section,
-.hljs-built_in,
-.hljs-type,
-.hljs-class .hljs-title {
+.hl-type,
+.hl-generic {
     color: #c4b5fd;
 }
 
-.hljs-params,
-.hljs-attribute {
+.hl-attribute {
     color: #fde68a;
 }
 
-.hljs-deletion {
+.hl-deletion {
     color: #fca5a5;
 }
 
-.hljs-emphasis {
+.hl-em {
     font-style: italic;
 }
 
-.hljs-strong {
+.hl-strong {
     font-weight: 700;
 }

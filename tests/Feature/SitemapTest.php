@@ -31,3 +31,9 @@ test('sitemap is valid xml', function () {
     expect($content)->toContain('<urlset');
     expect($content)->toContain('</urlset>');
 });
+
+test('sitemap only lists html pages', function () {
+    $content = $this->get('/sitemap.xml')->getContent();
+
+    expect($content)->not->toContain('llms.txt');
+});

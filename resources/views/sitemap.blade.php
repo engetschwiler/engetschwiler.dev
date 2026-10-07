@@ -29,9 +29,4 @@ $defaultLastmod = now()->toAtomString();
   <priority>0.70</priority>
 </url>
 @endforeach
-<url>
-  <loc>{{ url('/llms.txt') }}</loc>
-  <lastmod>{{ $defaultLastmod }}</lastmod>
-  <priority>0.50</priority>
-</url>
 </urlset>

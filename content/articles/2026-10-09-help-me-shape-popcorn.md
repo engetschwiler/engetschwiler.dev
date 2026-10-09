@@ -15,4 +15,7 @@ I put together a short survey to find out. It takes about a minute, it's fully a
 
 Not using Popcorn yet? Now is a good time to take a look. And if you do try it, I'd love to hear what you think 😎✌️
 
+- **iPhone & iPad**: [Download on the App Store](https://apps.apple.com/us/app/popcorn-movies-tv-watchlist/id6744529756)
+- **Android**: [Get it on Google Play](https://play.google.com/store/apps/details?id=com.interactive.popcorn)
+
 Thanks for your time!

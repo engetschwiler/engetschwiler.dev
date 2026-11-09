@@ -1,4 +1,4 @@
-<x-page :title="$article->title.' - Yves Engetschwiler'">
+<x-page :title="$article->title.' - Yves Engetschwiler'" :french="$article->french">
     <x-slot name="description">{{ $article->description }}</x-slot>
     <x-slot name="pan">page-article</x-slot>
 
@@ -42,6 +42,10 @@
         <x-link href="{{ route('articles.index') }}">&larr; Articles</x-link>
 
         <x-text>{{ $article->date->format('j F Y') }}</x-text>
+
+        @if ($article->french)
+            <x-link href="{{ $article->french }}" hreflang="fr" lang="fr">Version française</x-link>
+        @endif
     </div>
 
     <x-h1>{{ $article->title }}</x-h1>

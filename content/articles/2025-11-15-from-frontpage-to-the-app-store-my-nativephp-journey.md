@@ -1,6 +1,7 @@
 ---
 title: "From FrontPage to the App Store: My NativePHP journey"
 description: A self-taught web developer's 20-year journey from building school websites with Microsoft FrontPage to publishing a native iOS app on the App Store using Laravel and NativePHP.
+french: "https://bee-interactive.ch/blog/from-frontpage-to-the-app-store-my-nativephp-journey"
 ---
 
 Let me take you on a little journey — a journey that, for me, started way back in 2002.

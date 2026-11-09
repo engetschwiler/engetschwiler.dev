@@ -1,6 +1,7 @@
 ---
 title: "Building my first open source package: A Livewire file manager for Laravel"
 description: The story behind my first open source contribution — a simple, clean file manager for Laravel built with Livewire, Alpine.js and Tailwind CSS, inspired by macOS Finder.
+french: "https://bee-interactive.ch/blog/building-my-first-open-source-package-a-livewire-file-manager-for-laravel"
 ---
 
 For years I have relied on open source packages in my daily work as a Laravel developer. At some point I realised I had never actually published a package of my own. That thought stayed with me, and when a client project created the perfect opportunity, I decided it was time to change that.

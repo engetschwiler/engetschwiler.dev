@@ -35,6 +35,11 @@
 
 <link rel="canonical" href="{{ $canonical ?? url()->current() }}" />
 
+@isset($french)
+<link rel="alternate" hreflang="en" href="{{ $canonical ?? url()->current() }}" />
+<link rel="alternate" hreflang="fr" href="{{ $french }}" />
+@endisset
+
 @if (isset($noIndex) && $noIndex)
 <meta name="robots" content="noindex">
 @endif

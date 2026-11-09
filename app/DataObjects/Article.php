@@ -12,6 +12,7 @@ final readonly class Article
         public string $title,
         public string $description,
         public string $html,
+        public ?string $french = null,
     ) {}
 
     public function url(): string

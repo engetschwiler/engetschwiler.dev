@@ -1,6 +1,7 @@
 ---
 title: "What long-distance cycling taught me about being a better developer"
 description: I spend my days with Laravel. But I've also spent weeks in the saddle, crossing Europe all the way to Nordkapp. The road taught me things about my craft that no documentation ever could.
+french: "https://bee-interactive.ch/blog/what-long-distance-cycling-taught-me-about-being-a-better-developer"
 ---
 
 *And what it changes, concretely, for my clients.*

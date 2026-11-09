@@ -69,9 +69,9 @@ class ArticleRepository
 
         $slug = $matches[4];
         $mtime = filemtime($path) ?: 0;
-        $cacheKey = 'article.'.$filename.'.'.$mtime;
+        $cacheKey = 'article.v2.'.$filename.'.'.$mtime;
 
-        [$title, $description, $html] = Cache::rememberForever(
+        [$title, $description, $html, $french] = Cache::rememberForever(
             $cacheKey,
             fn () => $this->parse(file_get_contents($path) ?: '', $slug)
         );
@@ -82,10 +82,11 @@ class ArticleRepository
             title: $title,
             description: $description,
             html: $html,
+            french: $french,
         );
     }
 
-    /** @return array{0: string, 1: string, 2: string} */
+    /** @return array{0: string, 1: string, 2: string, 3: ?string} */
     private function parse(string $markdown, string $slug): array
     {
         $result = $this->converter()->convert($markdown);
@@ -94,8 +95,9 @@ class ArticleRepository
         $frontMatter = $result instanceof RenderedContentWithFrontMatter ? $result->getFrontMatter() : [];
         $title = is_array($frontMatter) && isset($frontMatter['title']) ? (string) $frontMatter['title'] : $this->extractTitle($html, $slug);
         $description = is_array($frontMatter) && isset($frontMatter['description']) ? (string) $frontMatter['description'] : $this->extractDescription($html);
+        $french = is_array($frontMatter) && is_string($frontMatter['french'] ?? null) ? $frontMatter['french'] : null;
 
-        return [$title, $description, $html];
+        return [$title, $description, $html, $french];
     }
 
     private function converter(): MarkdownConverter

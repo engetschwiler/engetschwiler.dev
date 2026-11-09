@@ -1,6 +1,7 @@
 ---
 title: "I was a bad employee before I was a decent founder"
 description: Fifteen years of running Bee Interactive — how obsession with the right pain, Laravel, open source, and one hire reshaped what "just a developer" means.
+french: "https://bee-interactive.ch/blog/i-was-a-bad-employee-before-i-was-a-decent-founder"
 ---
 
 Every job I had in my twenties ended the same way. I'd get hired, dive too deep into the stack, start pushing for "better ways" to do things, and within a year or two the friction would be obvious to everyone in the room. I wasn't lazy. I was the opposite. I cared about architecture, tooling, and polish in a way that rarely matched what the company actually needed on a Tuesday afternoon.

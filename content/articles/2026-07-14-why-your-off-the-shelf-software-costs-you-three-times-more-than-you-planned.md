@@ -1,6 +1,7 @@
 ---
 title: "Why your off-the-shelf software costs you three times more than you planned"
 description: The licence is only the visible part of the bill. The real cost is the parallel system your team builds every week to work around a tool that never quite fits.
+french: "https://bee-interactive.ch/blog/why-your-off-the-shelf-software-costs-you-three-times-more-than-you-planned"
 ---
 
 You went with the popular software, the one everyone uses. Cheaper, apparently. Less risk. Except that six months in, you're counting the hours spent configuring it, bending it, working around it. Your team knows its limitations by heart. And you're no longer just paying for the licence: you're paying for the wear and tear.

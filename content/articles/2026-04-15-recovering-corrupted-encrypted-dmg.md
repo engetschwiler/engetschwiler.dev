@@ -1,6 +1,7 @@
 ---
 title: "Recovering a Corrupted Encrypted macOS DMG: A Deep Dive"
 description: Data loss has a cruel quality when it strikes without warning — a cable pulled loose, a disk disconnected mid-write, and suddenly an encrypted DMG refuses to mount.
+french: "https://bee-interactive.ch/blog/recovering-corrupted-encrypted-dmg"
 ---
 
 **TL;DR**: An encrypted DMG file became corrupted after an abrupt disk disconnection. We spent a full day attempting to recover the data, reverse-engineering the `encrcdsa` v2 format, patching HFS+ B-tree headers, dumping process memory with SIP disabled, and ultimately hitting the wall of Apple Silicon's hardware AES acceleration. Here's everything we tried, what worked, and what didn't.

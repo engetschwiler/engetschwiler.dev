@@ -1,6 +1,7 @@
 ---
 title: "Help me shape Popcorn"
 description: "Popcorn is growing and I need your input. A one-minute anonymous survey to tell me what's missing, what's annoying, and what would make you open the app more often."
+french: "https://bee-interactive.ch/blog/help-me-shape-popcorn"
 ---
 
 I've been building Popcorn for a while now: a little watchlist app for movies and series, to keep track of what you want to watch, what you've seen, and what your friends are into.

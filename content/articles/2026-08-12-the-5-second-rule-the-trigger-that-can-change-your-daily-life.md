@@ -1,6 +1,7 @@
 ---
 title: "The 5 Second Rule: the trigger that can change your daily life"
 description: There's a short window between the impulse to act and the excuse not to. Mel Robbins' countdown is a mechanical way to close it, and it works precisely because it asks nothing of your motivation.
+french: "https://bee-interactive.ch/blog/the-5-second-rule-the-trigger-that-can-change-your-daily-life"
 ---
 
 An idea crosses your mind. Call that person. Get up and go for a run. Raise your hand in the meeting. And then, a few seconds later, it's gone. Just like that! That tiny gap between the impulse and the action, that's exactly what the **5 Second Rule** is built to close.

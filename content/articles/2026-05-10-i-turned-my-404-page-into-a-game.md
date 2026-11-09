@@ -1,6 +1,7 @@
 ---
 title: "I Turned My 404 Page Into a Flappy Bird Clone"
 description: Look, nobody likes hitting a 404. It's the digital equivalent of walking into a glass door.
+french: "https://bee-interactive.ch/blog/i-turned-my-404-page-into-a-game"
 ---
 
 Look, nobody likes hitting a 404. It's the digital equivalent of walking into a glass door. You were going somewhere, you had momentum, and now you're staring at a page that, in the best case, says "Oops!" with a sad cloud illustration the developer found on a free icon site at 2 AM.

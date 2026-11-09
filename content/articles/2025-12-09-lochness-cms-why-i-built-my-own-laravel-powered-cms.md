@@ -1,6 +1,7 @@
 ---
 title: "Lochness CMS: Why I built my own Laravel-powered CMS"
 description: The story behind Lochness CMS — a tailor-made, multilingual Laravel CMS that powers dozens of client projects, from its humble PHP 5 beginnings to a mature private Composer package.
+french: "https://bee-interactive.ch/blog/lochness-cms-why-i-built-my-own-laravel-powered-cms"
 ---
 
 For many years I've been building small, multilingual websites for clients who all share the same need: a simple, dependable way to manage their own content. Instead of choosing an off-the-shelf CMS, I gradually built my own. Today that system is called Lochness CMS — a Laravel-based, tailor-made CMS that powers dozens of client projects.

@@ -1,6 +1,7 @@
 ---
 title: "TV Time Is Gone. Here's Where Your Shows Live Now."
 description: "TV Time shut down on July 15, 2026. Popcorn is the free, no-ads, no-tracking films and series tracker your watchlist should live in now."
+french: "https://bee-interactive.ch/blog/tv-time-is-gone-heres-where-your-shows-live-now"
 ---
 
 **TV Time shut down on July 15, 2026. Twenty-six million people lost their watchlists overnight. Popcorn is the app they should have been using all along: free forever, no ads, no tracking, and now with full series tracking.**

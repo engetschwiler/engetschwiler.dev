@@ -1,7 +1,7 @@
 ---
 title: "Building Alpage: What I Learned Writing a Native macOS Dev Environment in Swift, with AI as a Pair"
 description: A native macOS menu bar app that manages a local web dev environment
-french: "https://bee-interactive.ch/blog/alpage-application"
+french: "https://bee-interactive.ch/blog/alpage-une-app-macos-native-en-swift-construite-avec-l-ia"
 ---
 
 ## Why I Started

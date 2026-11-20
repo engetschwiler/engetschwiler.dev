@@ -35,7 +35,7 @@ test('article url with non-numeric date parts is rejected', function () {
 test('translated article links to its french version', function () {
     $response = $this->get('/articles/2026/04/15/recovering-corrupted-encrypted-dmg');
 
-    $response->assertSee('<link rel="alternate" hreflang="fr" href="https://bee-interactive.ch/blog/recovering-corrupted-encrypted-dmg" />', false);
+    $response->assertSee('<link rel="alternate" hreflang="fr" href="https://bee-interactive.ch/blog/recuperer-une-image-disque-macos-chiffree-et-corrompue" />', false);
     $response->assertSee('<link rel="alternate" hreflang="en" href="'.url('/articles/2026/04/15/recovering-corrupted-encrypted-dmg').'" />', false);
     $response->assertSee('Version française');
 });

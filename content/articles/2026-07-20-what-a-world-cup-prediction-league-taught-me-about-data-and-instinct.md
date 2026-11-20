@@ -1,7 +1,7 @@
 ---
 title: "The one rule that won me a World Cup prediction league"
 description: I finished first out of 100 in a World Cup prediction league. The data set the baseline; the points came from knowing exactly when I was allowed to override it.
-french: "https://bee-interactive.ch/blog/what-a-world-cup-prediction-league-taught-me-about-data-and-instinct"
+french: "https://bee-interactive.ch/blog/ce-qu-un-concours-de-pronostics-m-a-appris-sur-les-donnees-et-l-intuition"
 ---
 
 I finished first out of 100 in the Bet Your Goal Open League with 117 points. I did not expect that when I signed up, and the way it happened turned out to be more interesting than the result itself.

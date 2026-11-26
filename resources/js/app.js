@@ -30,6 +30,27 @@ Alpine.data('themeToggle', () => ({
     }
 }))
 
+Alpine.data('lightbox', () => ({
+    source: '',
+    description: '',
+
+    open(event) {
+        const image = event.target.closest('img')
+
+        if (!image || image.closest('a')) {
+            return
+        }
+
+        this.source = image.currentSrc || image.src
+        this.description = image.alt
+        this.$refs.dialog.showModal()
+    },
+
+    close() {
+        this.$refs.dialog.close()
+    }
+}))
+
 window.Alpine = Alpine
 
 Alpine.start()

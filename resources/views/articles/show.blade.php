@@ -50,7 +50,13 @@
 
     <x-h1>{{ $article->title }}</x-h1>
 
-    <article class="prose prose-zinc dark:prose-invert max-w-none">
-        {!! $article->html !!}
-    </article>
+    <div x-data="lightbox">
+        <article class="prose prose-zinc dark:prose-invert max-w-none [&_img]:cursor-zoom-in" @click="open($event)">
+            {!! $article->html !!}
+        </article>
+
+        <dialog x-ref="dialog" @click="close()" class="m-auto max-h-none max-w-none cursor-zoom-out bg-transparent p-0 outline-none backdrop:bg-zinc-950/90">
+            <img :src="source" :alt="description" class="max-h-[92vh] max-w-[95vw] rounded-xl shadow-2xl">
+        </dialog>
+    </div>
 </x-page>
